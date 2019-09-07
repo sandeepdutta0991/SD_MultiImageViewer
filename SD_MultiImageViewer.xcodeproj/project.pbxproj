@@ -15,6 +15,13 @@
 		0E0FE049232390810074888D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FE047232390810074888D /* LaunchScreen.storyboard */; };
 		0E0FE054232390810074888D /* SD_MultiImageViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0FE053232390810074888D /* SD_MultiImageViewerTests.swift */; };
 		0E0FE05F232390810074888D /* SD_MultiImageViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0FE05E232390810074888D /* SD_MultiImageViewerUITests.swift */; };
+		0E0FE0702323918E0074888D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0FE06F2323918E0074888D /* ImageViewController.swift */; };
+		0E0FE0722323919E0074888D /* Image.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FE0712323919E0074888D /* Image.storyboard */; };
+		0E0FE075232392F00074888D /* ImageCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0FE074232392F00074888D /* ImageCollectionViewFlowLayout.swift */; };
+		0E0FE078232399D00074888D /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0FE077232399D00074888D /* ImageCollectionViewCell.swift */; };
+		0E0FE07E23239B290074888D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FE07B23239B290074888D /* 2.jpg */; };
+		0E0FE07F23239B290074888D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FE07C23239B290074888D /* 1.jpg */; };
+		0E0FE08023239B290074888D /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E0FE07D23239B290074888D /* 3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		0E0FE05A232390810074888D /* SD_MultiImageViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SD_MultiImageViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0FE05E232390810074888D /* SD_MultiImageViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SD_MultiImageViewerUITests.swift; sourceTree = "<group>"; };
 		0E0FE060232390810074888D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E0FE06F2323918E0074888D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		0E0FE0712323919E0074888D /* Image.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Image.storyboard; sourceTree = "<group>"; };
+		0E0FE074232392F00074888D /* ImageCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		0E0FE077232399D00074888D /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E0FE07B23239B290074888D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		0E0FE07C23239B290074888D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		0E0FE07D23239B290074888D /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,8 @@
 		0E0FE03A232390800074888D /* SD_MultiImageViewer */ = {
 			isa = PBXGroup;
 			children = (
+				0E0FE07923239AFA0074888D /* Resource */,
+				0E0FE06C232390BB0074888D /* Image */,
 				0E0FE03B232390800074888D /* AppDelegate.swift */,
 				0E0FE03D232390800074888D /* ViewController.swift */,
 				0E0FE03F232390800074888D /* Main.storyboard */,
@@ -126,6 +142,51 @@
 				0E0FE060232390810074888D /* Info.plist */,
 			);
 			path = SD_MultiImageViewerUITests;
+			sourceTree = "<group>";
+		};
+		0E0FE06C232390BB0074888D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FE076232399A50074888D /* ImageCollectionViewCell */,
+				0E0FE073232392C60074888D /* ImageCollectionViewFlowLayout */,
+				0E0FE06F2323918E0074888D /* ImageViewController.swift */,
+				0E0FE0712323919E0074888D /* Image.storyboard */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		0E0FE073232392C60074888D /* ImageCollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FE074232392F00074888D /* ImageCollectionViewFlowLayout.swift */,
+			);
+			path = ImageCollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		0E0FE076232399A50074888D /* ImageCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FE077232399D00074888D /* ImageCollectionViewCell.swift */,
+			);
+			path = ImageCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		0E0FE07923239AFA0074888D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FE07A23239B0A0074888D /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0E0FE07A23239B0A0074888D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FE07C23239B290074888D /* 1.jpg */,
+				0E0FE07B23239B290074888D /* 2.jpg */,
+				0E0FE07D23239B290074888D /* 3.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +293,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0FE07F23239B290074888D /* 1.jpg in Resources */,
+				0E0FE07E23239B290074888D /* 2.jpg in Resources */,
 				0E0FE049232390810074888D /* LaunchScreen.storyboard in Resources */,
 				0E0FE046232390810074888D /* Assets.xcassets in Resources */,
+				0E0FE0722323919E0074888D /* Image.storyboard in Resources */,
+				0E0FE08023239B290074888D /* 3.jpg in Resources */,
 				0E0FE041232390800074888D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0FE078232399D00074888D /* ImageCollectionViewCell.swift in Sources */,
+				0E0FE075232392F00074888D /* ImageCollectionViewFlowLayout.swift in Sources */,
 				0E0FE03E232390800074888D /* ViewController.swift in Sources */,
 				0E0FE03C232390800074888D /* AppDelegate.swift in Sources */,
+				0E0FE0702323918E0074888D /* ImageViewController.swift in Sources */,
 				0E0FE044232390800074888D /* SD_MultiImageViewer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
