@@ -13,6 +13,8 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
      let imageArray = [UIImage(named: "1.jpg"),UIImage(named: "2.jpg"),UIImage(named: "3.jpg")]
+    
+     var isFirstTimeScrolled = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,14 @@ class ImageViewController: UIViewController {
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: [.centeredVertically, .centeredHorizontally], animated: true)
+        if !isFirstTimeScrolled {
+            
+            isFirstTimeScrolled = true
+            collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: [.centeredVertically, .centeredHorizontally], animated: false)
+            
+        } else {
+            // no hanlde
+        }
     }
   
 }

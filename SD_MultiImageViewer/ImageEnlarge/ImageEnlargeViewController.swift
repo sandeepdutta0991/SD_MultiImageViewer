@@ -13,6 +13,7 @@ class ImageEnlargeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var imageEnlargeArray = [Any]()
     var selectedIndex = 0
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,8 @@ class ImageEnlargeViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        collectionView.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: [.centeredVertically, .centeredHorizontally], animated: true)
+       
+        collectionView.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: [.centeredVertically, .centeredHorizontally], animated: false)
     }
     
     @IBAction func doneButtonTapped(_ sender: UIButton) {
