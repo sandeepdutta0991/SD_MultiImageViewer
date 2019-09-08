@@ -1,24 +1,24 @@
 //
-//  ImageCollectionViewFlowLayout.swift
+//  ImageEnlargeFlowLayout.swift
 //  SD_MultiImageViewer
 //
-//  Created by SANDEEP DUTTA on 07/09/19.
+//  Created by SANDEEP DUTTA on 08/09/19.
 //  Copyright © 2019 SANDEEP DUTTA. All rights reserved.
 //
 
 import UIKit
 
-class ImageCollectionViewFlowLayout: UICollectionViewFlowLayout {
-    
+class ImageEnlargeFlowLayout: UICollectionViewFlowLayout {
+
     override func prepare() {
         
         let maxNumItem = 1
-        let cellHeight: CGFloat = 200.0
+        let cellHeight: CGFloat = UIScreen.main.bounds.height - 60.0
         guard let collectionView = collectionView else { return }
         
         self.scrollDirection = .horizontal
         collectionView.isPagingEnabled = true
-      //  let availableWidth = collectionView.bounds.inset(by: collectionView.layoutMargins).width
+        //  let availableWidth = collectionView.bounds.inset(by: collectionView.layoutMargins).width
         
         self.minimumInteritemSpacing = 0.0
         self.minimumLineSpacing = 0.0
@@ -32,5 +32,4 @@ class ImageCollectionViewFlowLayout: UICollectionViewFlowLayout {
         self.sectionInsetReference = .fromSafeArea
         
     }
-
 }

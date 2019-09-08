@@ -1,16 +1,16 @@
 //
-//  ImageCollectionViewCell.swift
+//  ImageEnlargeCollectionViewCell.swift
 //  SD_MultiImageViewer
 //
-//  Created by SANDEEP DUTTA on 07/09/19.
+//  Created by SANDEEP DUTTA on 08/09/19.
 //  Copyright © 2019 SANDEEP DUTTA. All rights reserved.
 //
 
 import UIKit
 
-class ImageCollectionViewCell: UICollectionViewCell {
-    
+class ImageEnlargeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imgItem: UIImageView!
+    
     
 }
